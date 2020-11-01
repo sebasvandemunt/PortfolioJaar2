@@ -16,6 +16,42 @@ function change() {
 
 var timer = setInterval ('change();', 200);
 
+//8-bit streamlounge thumbnail veranderd
+var streamloungetracker = 'streamlounge1';
+
+function streamloungechange() {
+    var image = document.getElementById('streamlounge');
+    if (streamloungetracker=='streamlounge1'){
+        image.src='Afbeeldingen/StreamLounge1.png';
+        streamloungetracker='streamlounge2';
+    }
+
+    else {
+        image.src='Afbeeldingen/StreamLounge2.png';
+        streamloungetracker='streamlounge1';
+    }
+}
+
+var timer = setInterval('streamloungechange();', 200);
+
+// Zennie thumbnail veranderd
+var zennietracker = 'zennie1';
+
+function zenniechange() {
+    var image = document.getElementById('zennie');
+    if (zennietracker=='zennie1'){
+        image.src='Afbeeldingen/Zennie1.png';
+        zennietracker='zennie2';
+    }
+
+    else {
+        image.src='Afbeeldingen/Zennie2.png';
+        zennietracker='zennie1';
+    }
+}
+
+var timer = setInterval('zenniechange();', 200);
+
 // Foto van mij veranderd
 var fotovanmijtracker = 'fotovanmij1';
 

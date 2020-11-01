@@ -3,7 +3,7 @@ body {
     background-image: url("Afbeeldingen/Achtergrond.png");
     background-color: #fffaf5;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: repeat, no-repeat;
     width: auto;
     height: auto;
@@ -20,6 +20,33 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+.streamlounge {
+    height: 25%;
+    width: 25%;
+}
+
+.zennie {
+    height: 25%;
+    width: 25%;
+}
+
+#slideshow {
+        position: relative;
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+        animation: slide 10s infinite;
+        max-height: 100%;
+        max-width: 100%;
+}
+
+@keyframes slide {
+    0% { left: 100%; }
+    35% { left: 25%; }
+    65% { left: 25%; }
+    100% { left: -100%; }
 }
 
 /* WIE BEN IK? SETTINGS */
