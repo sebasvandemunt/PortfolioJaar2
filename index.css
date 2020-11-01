@@ -3,7 +3,7 @@ body {
     background-image: url("Afbeeldingen/Achtergrond.png");
     background-color: #fffaf5;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: repeat, no-repeat;
     width: auto;
     height: auto;
