@@ -7,10 +7,8 @@ body {
     background-image: url("Afbeeldingen/Achtergrond.png");
     background-color: #fffaf5;
     background-position: center;
-    background-size: contain;
-    background-repeat: repeat, no-repeat;
-    width: auto;
-    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .titel {
