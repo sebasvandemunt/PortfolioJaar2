@@ -87,3 +87,111 @@ function overmijchange() {
 }
 
 var timer = setInterval('overmijchange();', 200);
+
+// Portfolio kopje veranderd
+var portfoliotracker = 'portfolio1';
+
+function portfoliochange() {
+    var image = document.getElementById('portfolioh2');
+    if (portfoliotracker=='portfolio1'){
+        image.src="Afbeeldingen/PortfolioAfb2.png";
+        portfoliotracker='portfolio2';
+    }
+
+    else {
+        image.src="Afbeeldingen/PortfolioAfb1.png";
+        portfoliotracker='portfolio1';
+    }
+}
+
+var timer = setInterval('portfoliochange();', 200);
+
+// Mose Afbeelding veranderd
+var mosetracker = 'mose1';
+
+function mosechange() {
+    var image = document.getElementById('mose');
+    if (mosetracker=='mose1'){
+        image.src="Afbeeldingen/Mose2.png";
+        mosetracker='mose2';
+    }
+
+    else {
+        image.src="Afbeeldingen/Mose1.png";
+        mosetracker='mose1';
+    }
+}
+
+var timer = setInterval('mosechange();', 200);
+
+// Bieb Afbeelding veranderd
+var biebtracker = 'bieb1';
+
+function biebchange() {
+    var image = document.getElementById('bieb');
+    if (biebtracker=='bieb1'){
+        image.src="Afbeeldingen/Bieb2.png";
+        biebtracker='bieb2';
+    }
+
+    else {
+        image.src="Afbeeldingen/Bieb1.png";
+        biebtracker='bieb1';
+    }
+}
+
+var timer = setInterval('biebchange();', 200);
+
+// Enigma Springs Afbeelding veranderd
+var enigmaspringstracker = 'enigmasprings1';
+
+function enigmaspringschange() {
+    var image = document.getElementById('enigmasprings');
+    if (enigmaspringstracker=='enigmasprings1'){
+        image.src="Afbeeldingen/EnigmaSprings2.png";
+        enigmaspringstracker='enigmasprings2';
+    }
+
+    else {
+        image.src="Afbeeldingen/EnigmaSprings1.png";
+        enigmaspringstracker='enigmasprings1';
+    }
+}
+
+var timer = setInterval('enigmaspringschange();', 200);
+
+// Ontwerponderzoek Afbeelding Veranderd
+var ontwerponderzoektracker = 'ontwerponderzoek1';
+
+function ontwerponderzoekchange() {
+    var image = document.getElementById('ontwerponderzoek');
+    if (ontwerponderzoektracker=='ontwerponderzoek1'){
+        image.src="Afbeeldingen/OntwerpOnderzoek2.png";
+        ontwerponderzoektracker='ontwerponderzoek2';
+    }
+
+    else {
+        image.src="Afbeeldingen/OntwerpOnderzoek1.png";
+        ontwerponderzoektracker='ontwerponderzoek1';
+    }
+}
+
+var timer = setInterval('ontwerponderzoekchange();', 200);
+
+// Superman wisselt
+var supermantracker = 'superman1';
+
+function supermanchange() {
+    var image = document.getElementById('superman');
+    if (supermantracker=='superman1'){
+        image.src="Afbeeldingen/superman2.png";
+        supermantracker='superman2';
+    }
+
+    else {
+        image.src="Afbeeldingen/superman1.png";
+        supermantracker='superman1';
+    }
+}
+
+var timer = setInterval('supermanchange();', 200);
