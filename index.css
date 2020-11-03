@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-image: url("Afbeeldingen/Achtergrond.png");
+    background-image: url("Afbeeldingen/Achtergrond-01.png");
     background-color: #fffaf5;
     background-position: center;
     background-size: cover;
@@ -184,16 +184,35 @@ body {
     }
 }
 
+.potlood {
+    position: absolute;
+    display: flex;
+    bottom: 0.5%;
+    height: 6%;
+    width: 2%;
+    animation: slide3 8s infinite;
+    z-index: -998;
+    float: left;
+}
+
+@keyframes slide3 {
+    0% { left: -100%; }
+    45% {left: 60%;}
+    40% { left: 61%;}
+    100% {left: 150%; }
+}
+
 .portfolioh2 {
     display: flex;
     position: relative;
+    margin-top: 3%;
     width: 70%;
     animation: 3s ease-out 0s 1 slideInFromBottom;
     transition: all 0.5s;
 }
 
 .portfolioh2:hover {
-    transform: rotate(2deg);
+    transform: rotate(-2deg);
     transition: all 0.5s;
 }
 
@@ -230,16 +249,63 @@ h2 {
     visibility: hidden;
 }
 
-#streamlounge2 {
+.streamlounge2 {
     height: 350px;
     width: 350px;
     margin-left: 5%;
     float: left;
+    transition: all 0.5s;
 }
 
-#zennie2 {
+.streamlounge2:hover {
+    height: 355px;
+    width: 355px;
+    transition: all 0.5s;
+}
+
+.zennie2 {
     height: 350px;
     width: 350px;
     margin-left: 5%;
     float: right;
+    transition: all 0.5s;
+}
+
+.zennie2:hover {
+    height: 355px;
+    width: 355px;
+    transition: all 0.5s;
+}
+
+.contacth2 {
+    display: flex;
+    position: relative;
+    width: 70%;
+    animation: 4s ease-out 0s 1 slideInFromBottom;
+    transition: all 0.5s;
+}
+
+.contacth2:hover {
+    transform: rotate(2deg);
+    transition: all 0.5s;
+}
+
+#contact p {
+    position: relative;
+    text-align: left;
+    font-size: 20px;
+    display: flex;
+    margin-top: 2%;
+    font-family: "Patrick_Hand";
+}
+
+#contact {
+    position: relative;
+    animation: 2s ease-out 0s 1 slideInFromBottom;
+    height: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
 }

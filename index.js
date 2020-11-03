@@ -195,3 +195,76 @@ function supermanchange() {
 }
 
 var timer = setInterval('supermanchange();', 200);
+
+// Contact kopje veranderd
+var contacttracker = 'contact1';
+
+function contactchange() {
+    var image = document.getElementById('contacth2');
+    if (contacttracker=='contact1'){
+        image.src="Afbeeldingen/ContactAfb2.png";
+        contacttracker='contact2';
+    }
+
+    else {
+        image.src="Afbeeldingen/ContactAfb1.png";
+        contacttracker='contact1';
+    }
+}
+
+var timer = setInterval('contactchange();', 200);
+
+// Potloodje veranderd
+var potloodtracker = 'potlood1';
+
+function potloodchange() {
+    var image = document.getElementById('potlood');
+    if (potloodtracker=='potlood1'){
+        image.src="Afbeeldingen/Potlood2.png";
+        potloodtracker='potlood2';
+    }
+
+    else {
+        image.src="Afbeeldingen/Potlood1.png";
+        potloodtracker='potlood1';
+    }
+}
+
+var timer = setInterval('potloodchange();', 200);
+
+// Streamlounge afb 2 veranderd
+var tweestreamloungetracker = '2streamlounge1';
+
+function tweestreamloungechange() {
+    var image = document.getElementById('2streamlounge2');
+    if (tweestreamloungetracker=='2streamlounge1'){
+        image.src='Afbeeldingen/2StreamLounge1.png';
+        tweestreamloungetracker='2streamlounge2';
+    }
+
+    else {
+        image.src='Afbeeldingen/2StreamLounge2.png';
+        tweestreamloungetracker='2streamlounge1';
+    }
+}
+
+var timer = setInterval('tweestreamloungechange();', 200);
+
+
+// Zennie 2 afb 2 veranderd
+var tweezennietracker = '2zennie1';
+
+function tweezenniechange() {
+    var image = document.getElementById('2zennie2');
+    if (tweezennietracker=='2zennie1'){
+        image.src='Afbeeldingen/2Zennie1.png';
+        tweezennietracker='2zennie2';
+    }
+
+    else {
+        image.src='Afbeeldingen/2Zennie2.png';
+        tweezennietracker='2zennie1';
+    }
+}
+
+var timer = setInterval('tweezenniechange();', 200);
